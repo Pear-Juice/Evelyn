@@ -25,7 +25,7 @@ function MenuScreen({navigation}) {
             <TouchableHighlight
                 underlayColor='#8c4530'
                 style={styles.menuButton}
-                //onPress={() => navigation.navigate('Details')}
+                onPress={() => navigation.navigate('Cookie')}
             >
                 <Text style={{fontSize: 30}}>Cookie Jar</Text>
             </TouchableHighlight>
@@ -33,18 +33,18 @@ function MenuScreen({navigation}) {
             <TouchableHighlight
                 underlayColor='#8c4530'
                 style={styles.menuButton}
-                //onPress={() => navigation.navigate('Details')}
+                onPress={() => navigation.navigate('Poetry')}
             >
                 <Text style={{fontSize: 30}}>Poetry</Text>
             </TouchableHighlight>
 
-            <TouchableHighlight
-                underlayColor='#8c4530'
-                style={styles.menuButton}
-                //onPress={() => navigation.navigate('Details')}
-            >
-                <Text style={{fontSize: 30}}>Moments</Text>
-            </TouchableHighlight>
+            {/*{<TouchableHighlight*/}
+            {/*    underlayColor='#8c4530'*/}
+            {/*    style={styles.menuButton}*/}
+            {/*    //onPress={() => navigation.navigate('Details')}*/}
+            {/*>*/}
+            {/*    <Text style={{fontSize: 30}}>Moments</Text>*/}
+            {/*</TouchableHighlight>}*/}
         </View>
     );
 }

@@ -5,6 +5,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MenuScreen from "./Pages/Menu";
 import InfoScreen from "./Pages/Info";
 import GalleryScreen from "./Pages/Gallery";
+import CookieScreen from "./Pages/Cookie";
+import PoetryScreen from "./Pages/Poetry";
+import CookieOpenScreen from "./Pages/CookieOpen";
 
 function HomeScreen({navigation}) {
 
@@ -34,6 +37,9 @@ export default function App() {
               <Stack.Screen name="Menu" component={MenuScreen} />
               <Stack.Screen name="Info" component={InfoScreen} />
               <Stack.Screen name="Gallery" component={GalleryScreen} />
+              <Stack.Screen name="Cookie" component={CookieScreen} />
+              <Stack.Screen name="Poetry" component={PoetryScreen} />
+              <Stack.Screen name="CookieOpen" component={CookieOpenScreen} />
           </Stack.Navigator>
       </NavigationContainer>
   );
