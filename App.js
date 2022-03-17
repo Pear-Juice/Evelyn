@@ -8,6 +8,7 @@ import GalleryScreen from "./Pages/Gallery";
 import CookieScreen from "./Pages/Cookie";
 import PoetryScreen from "./Pages/Poetry";
 import CookieOpenScreen from "./Pages/CookieOpen";
+import PoemScreen from "./Pages/Poem";
 
 function HomeScreen({navigation}) {
 
@@ -40,6 +41,7 @@ export default function App() {
               <Stack.Screen name="Cookie" component={CookieScreen} />
               <Stack.Screen name="Poetry" component={PoetryScreen} />
               <Stack.Screen name="CookieOpen" component={CookieOpenScreen} />
+              <Stack.Screen name="Poem" component={PoemScreen} />
           </Stack.Navigator>
       </NavigationContainer>
   );
