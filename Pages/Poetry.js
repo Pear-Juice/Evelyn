@@ -8,6 +8,7 @@ function PoetryScreen({navigation}) {
 
     const DATA = [
         {
+            key: "sfjishfishfgiijf",
             title: 'Fool',
             date: '1/10/22',
             poem: 'Do my eyes taste of the sea, oh Dorothy? ' +
@@ -28,6 +29,7 @@ function PoetryScreen({navigation}) {
             'Is it you, the muse, the savior, the fool who dared to caress my soul?',
         },
         {
+            key: "sfjiroejgkddfgnm",
             title: 'Second heartbreak',
             date: '2/24/22',
             poem: 'today is the day you say you want a break\n' +
@@ -70,6 +72,7 @@ function PoetryScreen({navigation}) {
             
         },
         {
+            key: "ssjgoksjgokgjjf",
             title: 'How to Kill a God',
             date: '2/15/22',
             poem: 'I sit on a gilded throne, glittering jewels\n' +
@@ -103,38 +106,6 @@ function PoetryScreen({navigation}) {
             'When every touch of yours trails blessings along my skin\n' +
             '\nWho does a god pray to for forgiveness?'
         },
-        {
-            title: 'Fourth Item',
-            date: '7394287',
-        },
-        {
-            title: 'Fourth Item',
-            date: '7394287',
-        },
-        {
-            title: 'Fourth Item',
-            date: '7394287',
-        },
-        {
-            title: 'Fourth Item',
-            date: '7394287',
-        },
-        {
-            title: 'Fourth Item',
-            date: '7394287',
-        },
-        {
-            title: 'Fourth Item',
-            date: '7394287',
-        },
-        {
-            title: 'Fourth Item',
-            date: '7394287',
-        },
-        {
-            title: 'Fourth Item',
-            date: '7394287',
-        },
     ];
 
     const Item = ({ title, date, poem }) => (
@@ -158,9 +129,9 @@ function PoetryScreen({navigation}) {
 
     return(
         <View style={styles.container}>
-            <ScrollView style={styles.poems}>
+            <View style={styles.poems}>
                 <FlatList data={DATA} renderItem={renderItem}/>
-            </ScrollView>
+            </View>
         </View>
     )
 }

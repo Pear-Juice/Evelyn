@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {TouchableHighlight, StyleSheet, Text, View, Image, ScrollView} from 'react-native';
+import {TouchableHighlight, StyleSheet, Text, View, Image, ScrollView, SafeAreaView} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { FlatList } from 'react-native';
@@ -7,15 +7,18 @@ import { FlatList } from 'react-native';
 let images= [
     {
         name: "Image 1",
-        image: require("../assets/brokenFortuneCookie.png"),
+        image: require("../assets/Gallery/brokenFortuneCookie.png"),
+        key: "isdifhdighdijghlfdgh",
     },
     {
         name:"Image 2",
-        image: require("../assets/brokenFortuneCookie.png")
+        image: require("../assets/Gallery/brokenFortuneCookie.png"),
+        key: "fjsojgnpjgndpjgndjgn",
     },
     {
         name: "Image 3",
-        image: require("../assets/brokenFortuneCookie.png")
+        image: require("../assets/Gallery/brokenFortuneCookie.png"),
+        key: "mbncxkbndighduigihgi",
     }
 ]
 
@@ -35,11 +38,11 @@ function GalleryScreen() { //rn this is not being used because,,, that thing up 
     );
 
     return (
-        <View style={styles.container}>
-            <ScrollView style={styles.poems}>
+        <SafeAreaView style={styles.container}>
+            <View>
                 <FlatList data={images} renderItem={renderItem}/>
-            </ScrollView>
-        </View>
+            </View>
+        </SafeAreaView>
     );
 }
 
