@@ -14,7 +14,7 @@ function InfoScreen() {
 
 
     useEffect(() => {
-        setMessage(messages[index]);
+        setMessage(messages[index]); //sop pls help
     }, [])
 
     const [message, setMessage] = useState('')
