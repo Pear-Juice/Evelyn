@@ -1,6 +1,7 @@
-import {TouchableHighlight, StyleSheet, Text, View, Image} from 'react-native';
+import {TouchableHighlight, StyleSheet, Text, View, Image, Alert} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {useEffect, useState} from "react";
 
 function InfoScreen() {
     const messages= [
@@ -12,22 +13,18 @@ function InfoScreen() {
         'Evelyn'
     ]
 
-
-    useEffect(() => {
-        setMessage(messages[index]);
-    }, [])
-
-    const [message, setMessage] = useState('')
     const [index,setIndex] = useState(0);
 
 
     return (
         <View style={styles.container}>
+            <Text style={styles.text}>{messages[index]}</Text>
+
             <View style={styles.arrowButtonContainer}>
                 <TouchableHighlight
                     underlayColor='#8c4530'
                     style={styles.menuButton}
-                    onPress={() => setIndex(index + 1)}
+                    onPress={() => setIndex(index - 1)}
                 >
                     <Text style={{fontSize: 30}}>‹</Text>
                 </TouchableHighlight>
@@ -35,7 +32,7 @@ function InfoScreen() {
                 <TouchableHighlight
                     underlayColor='#8c4530'
                     style={styles.menuButton}
-                    onPress={() => setIndex(index - 1)}
+                    onPress={() => setIndex(index + 1)}
                     >
                     <Text style={{fontSize: 30}}>›</Text>
                 </TouchableHighlight>
@@ -49,6 +46,16 @@ export default InfoScreen;
 
 
 const styles = StyleSheet.create({
+    text: {
+        backgroundColor: '#fae8e3',
+
+        borderRadius: 10,
+        width: 300,
+
+        margin: 50,
+        padding: 10,
+    },
+
     container: {
         flex: 1,
         backgroundColor: '#ffbfa3',
