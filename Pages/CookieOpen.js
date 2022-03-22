@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {useEffect, useState} from "react";
 
 function CookieOpenScreen({navigation}) {
-    const fortunes = ["THe quick brown Fox JumPed ovEr the LaZy DoG","winnie"];
+    const fortunes = ["Your eyes are really pretty","Fluffy hair !!"];
 
     useEffect(() => {
         setFortune(fortunes[Math.floor(Math.random() * fortunes.length)]);
