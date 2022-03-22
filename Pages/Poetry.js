@@ -8,42 +8,100 @@ function PoetryScreen({navigation}) {
 
     const DATA = [
         {
-            title: 'First Item',
-            date: 'w3897',
-            poem: 'On the bike path, a bunny\'s body and blood\n' +
-                'where the head should be. Something\n' +
-                '\n' +
-                'has torn off its foot, something has eaten\n' +
-                'its heart, its entrails frozen in snow.\n' +
-                '\n' +
-                'The plow growls past me. This morning\n' +
-                'I left eggs behind the couch to incubate. I spent\n' +
-                '\n' +
-                'last night walking until all the blood left my feet,\n' +
-                'and my thighs throbbed. The snow\n' +
-                '\n' +
-                'refuses to melt. I refuse to wear\n' +
-                'a sweater set or heels. Instead of TV news,\n' +
-                '\n' +
-                'I watch the sky. When it darkens,\n' +
-                'my ribs swell, and I know it is not time\n' +
-                '\n' +
-                'to plant. I wait for the beginning\n' +
-                'or the end—depending on the day. Soon,\n' +
-                '\n' +
-                'there will be enough water for all of us\n' +
-                'to need to build a boat: the sun falls\n' +
-                '\n' +
-                'into the street, blinding the drivers heading\n' +
-                'north, warming the snow from inside.',
+            title: 'Fool',
+            date: '1/10/22',
+            poem: 'Do my eyes taste of the sea, oh Dorothy? ' +
+            'You, clip-clopping, ripping brick after yellow brick away from the mortar that '+
+            'glues my rib cage to my spine? Is it you who paves my roads gold, gemstone heart green '+
+            'without envy, no. Green with life, green with wealth. You, with Poseidon\'s eyes, ' +
+            'hands the wide expanse of desert sand. Is it you, Aphrodite, sea foam at the mouth, '+
+            'breath shaking, the bellows of the earth heaving… Is it you, Demeter, '+
+            'through grass sways, fallen fruits swallowed by the earth, spat back up into bountiful berries and trees. '+
+            'Is it you who descended into the earth, spilling pomegranate seeds, seedling sprouts taming the three-headed dog. '+
+            'Is it you the winter mourns? The winds that whip milk into butter. White bread toasted brown, '+
+            'butter floating clumps down the wine-spring. Is it you, you Lia, you Lilith, you Lazarus, who crawls from Elysium, '+
+            'hair coiled with strands of gold, dangling jewels, holding my leaden hands. You who led the mule down the mountain, '+
+            'goat herder, your call that pulls fruit from the branches emerging from the joints of the fingers of saints. '+
+            'Is it you? My Anne, my Joan, my Heather, my Aria. Is it you who prods fingers through the mortar to make sure the fleshy, '+
+            'pulsing creature inside is still okay? Who asks it if it is hungry, and feeds it? '+
+            'Who massages the crevices and checks the valves, plucking arteries like harpstrings? '+
+            'Is it you, the muse, the savior, the fool who dared to caress my soul?',
         },
         {
-            title: 'Second Item',
-            date: '874938'
+            title: 'Second heartbreak',
+            date: '2/24/22',
+            poem: 'today is the day you say you want a break\n' +
+            'and perhaps i finally begin to understand what you felt before thanksgiving break\n' +
+            'our break, little breakup\n' +
+            'today was filled with blue text bubbles \n' +
+            'and blaming fingers pointed this way and that\n' +
+            'a magnet in a metal tube\n' +
+            'the word, break\n' +
+            'does to me exactly what it says, i suppose \n' +
+            'i might be bold enough to believe that you will come back \n' +
+            'but i\'ve always been a liability\n' + 
+            'for a raging forest fire does nothing to a boulder\n' +
+            'but make it hot.\n' +
+            
+            'but when my flames ran out you came after me\n' +
+            'i remember that \n' +
+            'but now i\'ve found my fire\n' +
+            'feeding it my fingers and my body\n' +
+            'my mind and my family \n' +
+            'i tossed my violin into the blaze like firewood, my love \n' +
+            'my blood is like gasoline \n' +
+            'i was learning “butterfly lovers concerto” for you\n' +
+            'my senior piece\n' +
+            'the piece i\'d play before leaving my instrument in the dust forever \n' +
+            'the two lovers were pulled apart \n' +
+            'because you know how chinese families are\n' +
+            'they raced off the cliff and like the golden eagle\n' +
+            'plummeted to meet the sharp rocks below \n' +
+            'they were born\n' +
+            'and they lived together as butterflies\n' +
+            
+            'i tossed their delicate wings into the blaze for you\n' +
+            
+            'it\'s still burning, you know\n' +
+            'the dumpster fire\n' +
+            'i dismantled my home and fed it to the metal trash can to keep it blazing \n' +
+            'it\'s cold out here\n' +
+            'but i will keep it warm for your return\n' 
+            
         },
         {
-            title: 'Third Item',
-            date: '7394287',
+            title: 'How to Kill a God',
+            date: '2/15/22',
+            poem: 'I sit on a gilded throne, glittering jewels\n' +
+            'Embedded in brushed silver and auburn gold vines\n' +
+            'Under my fingertips\n' +
+            '\nThe first peasant arrives with a platter of sizzling pork\n' +
+            'And though humble, the food is hearty, and I cannot help but\n' +
+            'Wonder which son he sold for such a lavish silver plate\n' +
+            '\nI look across the amethyst-encrusted fingers on my right hand\n' +
+            'Then up at the amber eyes of the dragon draped over marble stairs and\n' +
+            'Curled around pillars. The dragon shakes her mane and returns the gaze\n' +
+            '\nI take a bite of pork. It is surprisingly sweet and tastes of...\n' +
+            'Hope. Yearning, perhaps. Maybe a taste of freedom\n' +
+            'The dragon bellows, great flames leaping. I polish off my meal, feeling sorry for\n' +
+            'The charred corpse kneeling before me\n' +
+            '\nImagine my surprise when you walk in holding a simple wooden box\n' +
+            'The dragon snorts and leaves the room; she prefers gold\n' +
+            'You step forward with a smile\n' +
+            '\nWhat could you possibly offer?\n' +
+            'The head of an enemy? I take the box with curious hands\n' +
+            'Perhaps you have come to try your hand at assassinating a god? I lift the lid\n' +
+            '\nOh?\n' +
+            'A frail heart lies inside\n' +
+            'Beating to the pulsing in my throat\n' +
+            'I look at you, and you bow a deep bow,\n' +
+            'Hand over the hole in your chest\n'+
+            '\nSuddenly age-old traditions don\'t seem so important anymore\n' +
+            'And so that day you find yourself going home with an immortal\'s heart in place of your own\n' +
+            '\nWho does a god thank for the gift of the life of a lover?\n' +
+            'To think I would desecrate my own temple... it seems blasphemous\n' +
+            'When every touch of yours trails blessings along my skin\n' +
+            '\nWho does a god pray to for forgiveness?'
         },
         {
             title: 'Fourth Item',
