@@ -3,32 +3,41 @@ import {TouchableHighlight, StyleSheet, Text, View, Image, ScrollView, SafeAreaV
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { FlatList } from 'react-native';
+import { HORIZONTAL, VERTICAL } from 'react-native/Libraries/Components/ScrollView/ScrollViewContext';
+import { Dimensions } from 'react-native';
 // import {Gallery} from 'react-native-photo-gallery';
 let images= [
     {
         name: "Image 1",
-        image: require("../assets/Gallery/brokenFortuneCookie.png"),
-        key: "isdifhdighdijghlfdgh",
+        image: require("../assets/Gallery/grasspurp.jpg"),
+        key: "aaa",
     },
     {
         name:"Image 2",
-        image: require("../assets/Gallery/brokenFortuneCookie.png"),
-        key: "fjsojgnpjgndpjgndjgn",
+        image: require("../assets/Gallery/gal4.jpg"),
+        key: "bbb",
     },
     {
         name: "Image 3",
-        image: require("../assets/Gallery/brokenFortuneCookie.png"),
-        key: "mbncxkbndighduigihgi",
-    }
+        image: require("../assets/Gallery/gal2.jpg"),
+        key: "ccc",
+    },
+    {
+        name: "Image 4",
+        image: require("../assets/Gallery/gal3.jpg"),
+        key: "ddd",
+    },
 ]
 
 
-function GalleryScreen() { //rn this is not being used because,,, that thing up there
+function GalleryScreen() {
     const Item = ({ name, imageFile}) => (
         <View>
-            <Text style={styles.name}>{name}</Text>
             <View style={styles.imageContainer}>
-                <Image resizeMode={'contain'} style={{width: 200, height: 200}} source={imageFile}/>
+                <Image resizeMode={'contain'} 
+                style={{width: Dimensions.get('window').width,
+                }} 
+                source={imageFile}/>
             </View>
         </View>
     );
