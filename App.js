@@ -14,14 +14,14 @@ function HomeScreen({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Text style={{fontSize: 35}}>Hello!!!!</Text>
+            <Text style={{fontSize: 50, color: '#E6BCCD'}}>Hello!!!!</Text>
             <TouchableHighlight
                 underlayColor='#8c4530'
                 style={styles.button}
 
                 onPress={() => navigation.navigate('Menu')}
             >
-                <Text>{"Start<3"}</Text>
+                <Text style={styles.text}>{"Start<3"}</Text>
             </TouchableHighlight>
             {/*<Image source={require("./assets/heart.png")}/>*/}
         </View>
@@ -50,20 +50,25 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffbfa3',
+    backgroundColor: '#29274C',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
     button: {
-      backgroundColor: '#f79a7e',
-        margin: 60,
-        padding: 10,
+        backgroundColor: '#7E52A0',
+        margin: 80,
+        padding: 20,
         borderRadius:300,
     },
 
+    text: {
+        fontSize: 20,
+        color: '#E6BCCD'
+    },
+
     menuButton: {
-        backgroundColor: '#f79a7e',
+        backgroundColor: '#EADDD8',
         margin: 13,
         paddingVertical: 5,
         paddingHorizontal: 10,
