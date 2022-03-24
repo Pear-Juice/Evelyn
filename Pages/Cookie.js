@@ -1,11 +1,13 @@
-import {TouchableHighlight, StyleSheet, Text, View, Image} from 'react-native';
+import { TouchableHighlight, StyleSheet, Text, View, Image } from 'react-native';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { focusProps } from 'react-native-web/dist/cjs/modules/forwardedProps';
 
 function CookieScreen({navigation}) {
     return (
         <View style={styles.container}>
-            <Text>:)</Text>
+            <Text style={styles.text}>Press the cookie!</Text>
 
             <TouchableHighlight
                 underlayColor='#8c4530'
@@ -13,7 +15,7 @@ function CookieScreen({navigation}) {
 
                 onPress={() => navigation.navigate('CookieOpen')}
             >
-                <Image resizeMode={'contain'} style={{width: 200, height: 200}} source={require( "../assets/fortuneCookie.png")}/>
+                <Image resizeMode={'contain'} style={{width: 150, height: 150}} source={require( "../assets/Cookie_Closed.png")}/>
 
             </TouchableHighlight>
         </View>
@@ -26,16 +28,21 @@ export default CookieScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#ffbfa3',
+        backgroundColor: '#230D06',
         alignItems: 'center',
         justifyContent: 'center',
     },
 
+    text: {
+        fontSize: 30,
+        color: '#F97339',
+    },
+
 
     button: {
-        backgroundColor: '#ffbfa3',
+        backgroundColor: '#F97339',
         margin: 60,
-        padding: 15,
+        padding: 30,
         borderRadius:300,
     },
 });
