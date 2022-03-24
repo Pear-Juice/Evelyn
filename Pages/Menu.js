@@ -54,13 +54,13 @@ export default MenuScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#29274C',
+        backgroundColor: '#230D06',
         alignItems: 'center',
         justifyContent: 'center',
     },
 
     button: {
-        backgroundColor: '#f79a7e',
+        backgroundColor: '#F97339',
         margin: 60,
         padding: 10,
         borderRadius:300,
@@ -68,11 +68,11 @@ const styles = StyleSheet.create({
 
     text: {
         fontSize: 40,
-        color: '#E6BCCD'
+        color: '#F97339'
     },
 
     menuButton: {
-        backgroundColor: '#7E52A0',
+        backgroundColor: '#8F2B00',
         margin: 13,
         paddingVertical: 10,
         paddingHorizontal: 20,
