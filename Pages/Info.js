@@ -47,7 +47,7 @@ export default InfoScreen;
 
 const styles = StyleSheet.create({
     text: {
-        backgroundColor: '#fae8e3',
+        backgroundColor: '#E8BFB0',
 
         borderRadius: 10,
         width: 300,
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor: '#ffbfa3',
+        backgroundColor: '#230D06',
         alignItems: 'center',
         justifyContent: 'center',
     },
