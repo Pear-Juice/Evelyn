@@ -14,7 +14,7 @@ function HomeScreen({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Text style={{fontSize: 50, color: '#E6BCCD'}}>Hello!!!!</Text>
+            <Text style={{fontSize: 50, color: '#F97339'}}>Hello!!!!</Text>
             <TouchableHighlight
                 underlayColor='#8c4530'
                 style={styles.button}
@@ -50,13 +50,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#29274C',
+    backgroundColor: '#230D06',
     alignItems: 'center',
     justifyContent: 'center',
   },
 
     button: {
-        backgroundColor: '#7E52A0',
+        backgroundColor: '#F97339',
         margin: 80,
         padding: 20,
         borderRadius:300,
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
 
     text: {
         fontSize: 20,
-        color: '#E6BCCD'
+        color: '#8F2B00'
     },
 
     menuButton: {
