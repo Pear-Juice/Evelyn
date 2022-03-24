@@ -279,13 +279,13 @@ export default PoetryScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#ffbfa3',
+        backgroundColor: '#230D06',
         alignItems: 'center',
         justifyContent: 'center',
     },
 
     button: {
-        backgroundColor: '#f79a7e',
+        backgroundColor: '#F97339',
         paddingVertical: 1,
         paddingHorizontal: 10,
         padding: 10,
@@ -295,7 +295,7 @@ const styles = StyleSheet.create({
     },
 
     poems: {
-        backgroundColor: '#fae8e3',
+        backgroundColor: '#DBA794',
 
         borderRadius: 10,
         width: 300,
@@ -304,10 +304,11 @@ const styles = StyleSheet.create({
 
     text: {
       fontSize: 17,
+      color: '#012A36'
     },
 
     item: {
-        backgroundColor: '#e5dfdf',
+        backgroundColor: '#E8BFB0',
         flexDirection: 'row',
         margin: 15,
         padding: 5,
