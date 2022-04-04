@@ -3,11 +3,12 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { focusProps } from 'react-native-web/dist/cjs/modules/forwardedProps';
+import styles from './Colors';
 
 function CookieScreen({navigation}) {
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>Press the cookie!</Text>
+            <Text style={styles.title}>Press the cookie!</Text>
 
             <TouchableHighlight
                 underlayColor='#8c4530'
@@ -25,24 +26,4 @@ function CookieScreen({navigation}) {
 export default CookieScreen;
 
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#230D06',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
 
-    text: {
-        fontSize: 30,
-        color: '#F97339',
-    },
-
-
-    button: {
-        backgroundColor: '#F97339',
-        margin: 60,
-        padding: 30,
-        borderRadius:300,
-    },
-});
