@@ -9,12 +9,13 @@ import CookieScreen from "./Pages/Cookie";
 import PoetryScreen from "./Pages/Poetry";
 import CookieOpenScreen from "./Pages/CookieOpen";
 import PoemScreen from "./Pages/Poem";
+import styles from './Pages/Colors';
 
 function HomeScreen({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Text style={{fontSize: 50, color: '#F97339'}}>Hello!!!!</Text>
+            <Text style={styles.title}>Hello!!!!</Text>
             <TouchableHighlight
                 underlayColor='#8c4530'
                 style={styles.button}
@@ -47,31 +48,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#230D06',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-    button: {
-        backgroundColor: '#F97339',
-        margin: 80,
-        padding: 20,
-        borderRadius:300,
-    },
-
-    text: {
-        fontSize: 20,
-        color: '#8F2B00'
-    },
-
-    menuButton: {
-        backgroundColor: '#EADDD8',
-        margin: 13,
-        paddingVertical: 5,
-        paddingHorizontal: 10,
-        borderRadius: 20,
-    }
-});
