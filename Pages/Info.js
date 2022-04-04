@@ -2,6 +2,7 @@ import {TouchableHighlight, StyleSheet, Text, View, Image, Alert} from 'react-na
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {useEffect, useState} from "react";
+import styles from './Colors';
 
 function InfoScreen() {
     const messages= [
@@ -18,7 +19,7 @@ function InfoScreen() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>{messages[index]}</Text>
+            <Text style={styles.infotext}>{messages[index]}</Text>
 
             <View style={styles.arrowButtonContainer}>
                 <TouchableHighlight
@@ -45,33 +46,3 @@ function InfoScreen() {
 export default InfoScreen;
 
 
-const styles = StyleSheet.create({
-    text: {
-        backgroundColor: '#E8BFB0',
-
-        borderRadius: 10,
-        width: 300,
-
-        margin: 50,
-        padding: 10,
-    },
-
-    container: {
-        flex: 1,
-        backgroundColor: '#230D06',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    button: {
-        backgroundColor: '#f79a7e',
-        margin: 60,
-        padding: 10,
-        borderRadius:300,
-    },
-
-    arrowButtonContainer: {
-        flexDirection: 'row',
-
-    },
-});
