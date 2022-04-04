@@ -1,6 +1,7 @@
 import {TouchableHighlight, StyleSheet, Text, View, Image} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import styles from './Colors';
 
 function MenuScreen({navigation}) {
     return (
@@ -51,31 +52,4 @@ function MenuScreen({navigation}) {
 export default MenuScreen;
 
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#230D06',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
 
-    button: {
-        backgroundColor: '#F97339',
-        margin: 60,
-        padding: 10,
-        borderRadius:300,
-    },
-
-    text: {
-        fontSize: 40,
-        color: '#F97339'
-    },
-
-    menuButton: {
-        backgroundColor: '#8F2B00',
-        margin: 13,
-        paddingVertical: 10,
-        paddingHorizontal: 20,
-        borderRadius: 50,
-    }
-});
