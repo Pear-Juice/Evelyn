@@ -6,6 +6,8 @@ import { FlatList } from 'react-native';
 import { HORIZONTAL, VERTICAL } from 'react-native/Libraries/Components/ScrollView/ScrollViewContext';
 import { Dimensions } from 'react-native';
 // import {Gallery} from 'react-native-photo-gallery';
+import styles from './Colors';
+
 let images= [
     {
         name: "Image 1",
@@ -58,33 +60,4 @@ function GalleryScreen() {
 export default GalleryScreen;
 
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#ffbfa3',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
 
-    image: {
-        width: 400,
-        height:400,
-    },
-
-    imageContainer: {
-      resizeMode: 'contain',
-      flex: 1,
-      aspectRatio: 1,
-    },
-
-    name: {
-        fontSize: 17,
-    },
-
-    button: {
-        backgroundColor: '#f79a7e',
-        margin: 60,
-        padding: 10,
-        borderRadius:300,
-    },
-});
