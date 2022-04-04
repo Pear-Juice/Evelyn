@@ -2,6 +2,7 @@ import {TouchableHighlight, StyleSheet, Text, View, Image, FlatList, ScrollView}
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {useState} from "react";
+import styles from './Colors';
 
 
 function PoetryScreen({navigation}) {
@@ -247,9 +248,9 @@ function PoetryScreen({navigation}) {
 
     const Item = ({ title, date, poem }) => (
         <View style={styles.item}>
-            <Text style={styles.text}>{title + "    " + date}</Text>
+            <Text style={styles.poetrytext}>{title + "    " + date}</Text>
             <View style={{display: 'flex', flex: 1, alignContent: 'flex-end'}}>
-                <TouchableHighlight style={styles.button}
+                <TouchableHighlight style={styles.poetrybutton}
                 onPress={() => navigation.navigate("Poem", {paramKey: poem} )}
                 >
 
@@ -276,42 +277,3 @@ function PoetryScreen({navigation}) {
 export default PoetryScreen;
 
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#230D06',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    button: {
-        backgroundColor: '#F97339',
-        paddingVertical: 1,
-        paddingHorizontal: 10,
-        padding: 10,
-        borderRadius: 10,
-
-        alignSelf: 'flex-end',
-    },
-
-    poems: {
-        backgroundColor: '#DBA794',
-
-        borderRadius: 10,
-        width: 300,
-        margin: 50,
-    },
-
-    text: {
-      fontSize: 17,
-      color: '#012A36'
-    },
-
-    item: {
-        backgroundColor: '#E8BFB0',
-        flexDirection: 'row',
-        margin: 15,
-        padding: 5,
-        borderRadius: 10,
-    },
-});
