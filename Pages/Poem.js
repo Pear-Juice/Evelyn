@@ -23,7 +23,7 @@ export default PoemScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#230D06',
+        backgroundColor: '#773344',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     },
 
     poemContainer: {
-        backgroundColor: '#E8BFB0',
+        backgroundColor: '#F6CBD3',
 
         borderRadius: 10,
         width: 300,
@@ -50,5 +50,6 @@ const styles = StyleSheet.create({
 
     text: {
         fontSize: 17,
+        color: '#773344'
     },
 });

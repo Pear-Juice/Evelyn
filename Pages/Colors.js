@@ -95,6 +95,45 @@ export default StyleSheet.create({
         borderRadius: 10,
         width: 300,
         margin: 50,
+        marginBottom: 170,
+    },
+
+    poemInput: {
+        backgroundColor: '#F6CBD3',
+        width: 200,
+        maxHeight: 100,
+        alignSelf: "center",
+        borderRadius: 10,
+        padding: 5,
+        color: '#773344',
+        fontSize: 17,
+    },
+
+    poemInputLabel: {
+        backgroundColor: '#F6CBD3',
+        width: 50,
+        height: 30,
+        alignSelf: "center",
+        borderRadius: 10,
+        justifyContent: 'center',
+        marginRight: 10,
+    },
+
+    poemInputLabelText: {
+        color: '#773344',
+        fontSize: 17,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+    },
+
+    poemInputButton: {
+        backgroundColor: '#F6CBD3',
+        alignSelf: "center",
+        borderRadius: 10,
+        justifyContent: 'center',
+        paddingHorizontal: 10,
+        paddingVertical: 5,
+        marginBottom: 10,
     },
 
     poetrytext: {

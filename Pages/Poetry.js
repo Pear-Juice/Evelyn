@@ -1,4 +1,4 @@
-import {TouchableHighlight, StyleSheet, Text, View, Image, FlatList, ScrollView} from 'react-native';
+import {TouchableHighlight, StyleSheet, Text, View, Image, FlatList, ScrollView, TextInput} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {useState} from "react";
@@ -7,7 +7,7 @@ import styles from './Colors';
 
 function PoetryScreen({navigation}) {
 
-    const DATA = [
+    const [poems, setPoems] = useState([
         {
             key: 'qqq',
             title: 'Word Three',
@@ -244,7 +244,7 @@ function PoetryScreen({navigation}) {
             'a new apartment'
         }
 
-    ];
+    ]);
 
     const Item = ({ title, date, poem }) => (
         <View style={styles.item}>
@@ -253,7 +253,6 @@ function PoetryScreen({navigation}) {
                 <TouchableHighlight style={styles.poetrybutton}
                 onPress={() => navigation.navigate("Poem", {paramKey: poem} )}
                 >
-
                     <Text>›</Text>
 
                 </TouchableHighlight>
@@ -265,10 +264,55 @@ function PoetryScreen({navigation}) {
         <Item title={item.title} date={item.date} poem={item.poem} />
     );
 
+    const [newTitle, setNewTitle] = useState("");
+    const [newDate, setNewDate] = useState("");
+    const [newPoem, setNewPoem] = useState("");
+
     return(
         <View style={styles.container}>
             <View style={styles.poems}>
-                <FlatList data={DATA} renderItem={renderItem}/>
+                <View style={{flexDirection: 'row', justifyContent: 'center', marginBottom: 10, marginTop: 100}}>
+                    <View style={styles.poemInputLabel}>
+                        <Text style={styles.poemInputLabelText}>Title</Text>
+                    </View>
+                    <TextInput
+                        style={styles.poemInput}
+                        onChangeText={(text) => {setNewTitle(text)}}/>
+                </View>
+
+                <View style={{flexDirection: 'row', justifyContent: 'center', marginBottom: 10}}>
+                    <View style={styles.poemInputLabel}>
+                        <Text style={styles.poemInputLabelText}>Date</Text>
+                    </View>
+                    <TextInput
+                        style={styles.poemInput}
+                        onChangeText={(text) => {setNewDate(text)}}/>
+                </View>
+
+                <View style={{flexDirection: 'row', justifyContent: 'center', marginBottom: 10}}>
+                    <View style={styles.poemInputLabel}>
+                        <Text style={styles.poemInputLabelText}>Poem</Text>
+                    </View>
+                    <TextInput
+                        multiline={true}
+                        style={styles.poemInput}
+                        onChangeText={(text) => {setNewPoem(text)}}/>
+                </View>
+
+                <TouchableHighlight
+                    style={styles.poemInputButton}
+                    onPress={() => {
+                        let randNum = Math.floor(Math.random() * 9999999);
+                        setPoems((a) => [...a, {title: newTitle, date: newDate, poem: newPoem, key: randNum}])
+                    }}
+                >
+                    <Text style={{
+                        fontSize: 17,
+                        color: '#773344'}}>Add
+                    </Text>
+                </TouchableHighlight>
+
+                <FlatList data={poems} renderItem={renderItem}/>
             </View>
         </View>
     )

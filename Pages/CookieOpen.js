@@ -17,8 +17,17 @@ function CookieOpenScreen({navigation}) {
         "You\'re my best friend",
         ];
 
+    const openedFortunes = [];
+
     useEffect(() => {
-        setFortune(fortunes[Math.floor(Math.random() * fortunes.length)]);
+        let randNum = Math.floor(Math.random() * fortunes.length);
+        setFortune(fortunes[randNum]);
+
+        if (fortunes.length !== 0) {
+            openedFortunes.push(fortunes[randNum])
+            fortunes.splice(randNum);
+        }
+
     }, [])
 
     const [fortune, setFortune] = useState("");

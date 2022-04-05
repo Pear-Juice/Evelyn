@@ -9,11 +9,11 @@ import { Dimensions } from 'react-native';
 import styles from './Colors';
 
 let images= [
-    {
-        name: "Image 1",
-        image: require("../assets/Gallery/grasspurp.jpg"),
-        key: "aaa",
-    },
+    // {
+    //     name: "Image 1",
+    //     image: require("../assets/Gallery/grasspurp.jpg"),
+    //     key: "aaa",
+    // },
     {
         name:"Image 2",
         image: require("../assets/Gallery/gal4.jpg"),
@@ -37,7 +37,7 @@ function GalleryScreen() {
         <View>
             <View style={styles.imageContainer}>
                 <Image resizeMode={'contain'} 
-                style={{width: Dimensions.get('window').width,
+                style={{width: Dimensions.get('window').width, height: 300
                 }} 
                 source={imageFile}/>
             </View>
